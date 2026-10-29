@@ -21,7 +21,7 @@ desc: |
 
 version: 1.0.0
 author: astrbot_plugin_greeting_bot
-repo: https://github.com/example/astrbot_plugin_greeting_bot
+repo: https://github.com/az1128/az-.git
 astrbot_version: ">=4.17.0"
 tags:
   - greeting
