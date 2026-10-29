@@ -1,0 +1,29 @@
+name: astrbot_plugin_greeting_bot
+display_name: 定时问候
+short_desc: 每天定时发送早安、午好、晚安问候
+desc: |
+  一个简单好用的定时问候插件。
+  功能仅限于：固定时间向指定会话发送问候语。
+
+  **特性：**
+  - 🌅 早安问候
+  - ☀️ 午好问候
+  - 🌙 晚安问候
+  - ⏰ 每个问候的时间可自定义
+  - 💬 每个问候的内容可自定义（支持多条随机）
+  - 📌 支持绑定多个会话（群/私聊）
+  - ✅ 每个问候可独立启用/关闭
+
+  **适用场景：**
+  - 让机器人每天按时在群里打招呼
+  - 给特定用户每天发送贴心问候
+  - 营造温暖的社群氛围
+
+version: 1.0.0
+author: astrbot_plugin_greeting_bot
+repo: https://github.com/example/astrbot_plugin_greeting_bot
+astrbot_version: ">=4.17.0"
+tags:
+  - greeting
+  - schedule
+  - utility

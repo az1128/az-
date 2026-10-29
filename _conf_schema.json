@@ -1,0 +1,96 @@
+{
+  "enabled": {
+    "description": "启用插件",
+    "type": "bool",
+    "default": true,
+    "hint": "关闭后插件不会发送任何问候消息"
+  },
+  "targets": {
+    "description": "问候发送目标（会话标识）",
+    "type": "list",
+    "default": [],
+    "hint": "使用 /greet_add 指令在目标群/私聊中添加。请勿手动修改此项。",
+    "invisible": false
+  },
+  "morning": {
+    "description": "🌅 早安问候",
+    "type": "object",
+    "items": {
+      "enabled": {
+        "description": "启用早安问候",
+        "type": "bool",
+        "default": true
+      },
+      "time": {
+        "description": "发送时间（24小时制）",
+        "type": "string",
+        "default": "07:30",
+        "hint": "格式 HH:MM，例如 07:30 表示早上7点30分"
+      },
+      "messages": {
+        "description": "问候语列表（每天随机选一条发送）",
+        "type": "list",
+        "default": [
+          "早安！新的一天开始啦，祝你元气满满！☀️",
+          "早上好呀！今天也要加油哦～ 🌅",
+          "清晨的第一缕阳光送给你，早安！"
+        ],
+        "hint": "可以写多条，插件会在发送时随机选一条"
+      }
+    }
+  },
+  "noon": {
+    "description": "☀️ 午好问候",
+    "type": "object",
+    "items": {
+      "enabled": {
+        "description": "启用午好问候",
+        "type": "bool",
+        "default": true
+      },
+      "time": {
+        "description": "发送时间（24小时制）",
+        "type": "string",
+        "default": "12:00",
+        "hint": "格式 HH:MM，例如 12:00 表示中午12点"
+      },
+      "messages": {
+        "description": "问候语列表（每天随机选一条发送）",
+        "type": "list",
+        "default": [
+          "午好～记得按时吃饭哦！🍱",
+          "中午好呀，休息一下吧 ☀️",
+          "忙碌的一上午过去了，吃个好午饭犒劳自己！"
+        ],
+        "hint": "可以写多条，插件会在发送时随机选一条"
+      }
+    }
+  },
+  "evening": {
+    "description": "🌙 晚安问候",
+    "type": "object",
+    "items": {
+      "enabled": {
+        "description": "启用晚安问候",
+        "type": "bool",
+        "default": true
+      },
+      "time": {
+        "description": "发送时间（24小时制）",
+        "type": "string",
+        "default": "22:30",
+        "hint": "格式 HH:MM，例如 22:30 表示晚上10点30分"
+      },
+      "messages": {
+        "description": "问候语列表（每天随机选一条发送）",
+        "type": "list",
+        "default": [
+          "晚安啦～做个好梦！🌙",
+          "夜深了，早点休息哦 😴",
+          "愿你今夜好梦，明天见！✨"
+        ],
+        "hint": "可以写多条，插件会在发送时随机选一条"
+      }
+    }
+  }
+}
